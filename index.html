@@ -4,30 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <title>LIZ DAMARIS MUKAMI - Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
+<body id="body">
     <div id="header">
         <div class ="container">
             <nav>
                 <img src="./images/logo.png" class="logo"/>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#body">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I'm <span>Liz D. Mukami</span> <br>From Nairobi, Kenya.</h1>
+            <div class="content">
+                <h4>Howdy folks! My name is</h4>
+                <h1>Liz D. <span>Mukami</span></h1>
+                <h3>From Nairobi, Kenya.</h3>
+                <h3>I'm a Web Developer.</h3>
             </div>
         </div>
     </div>
-    
 
+    <!-------------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Web developer with a focus on discovering solutions, skilled at contributing to highly collaborative work environments. demonstrated expertise with HTML, CSS, PHP, and JavaScript to create websites with a strong focus on the user. good understanding of user experience and web design best practices.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><p><span>Web Design</span><br>Designing Web/App interfaces</p></li>
+                            <li><p><span>Web Development</span><br>Web App Development</p></li>
+                            <li><span>Database Design</span><br><p>Database Design and Implementation</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 Nov - Current</span><br><p>Software Engineering BootCamp at Moringa School</p></li>
+                            <li><span>2022 Jan - Sept</span><br><p>Systems Developer at VLAN Technologies</p></li>
+                            <li><span>2022 June - October</span><br><p>Part-Time Programming Languages Tutor</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2023</span><br><p>Software Engineering at Moringa School</p></li>
+                            <li><span>2021</span><br><p>HTML, CSS and JavaScript Training through sololearn</p></li>
+                            <li><span>2015-2019</span><br><p>BSc Information Science at Rongo University</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----service section start----------->
+	<div id="services" class="service">
+		<div class="title">
+			<h2>The LDM Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Design</h5>
+				<div class="pra">
+					<p>Adobe Creative Suite (e.g., Photoshop, Illustrator) or other design software, Graphic design, UI design,UX design, Logo design.</p>
+					<p style="text-align: center;">
+						<a class="button" href="https://lizdmukami.github.io/liz-portfolio/">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://lizdmukami.github.io/liz-portfolio/">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>DB Design</h5>
+				<div class="pra">
+					<p>We take charge of designing, developing, executing and preserving a company's data management systems.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://lizdmukami.github.io/liz-portfolio/">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div id="contact" class="contact-me">
+		<p>Let Me Create You A Dope Full Responsive Website.</p>
+		<div class="newslatter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="submit" name="submit" value="Lets Start">
+            </form>
+        </div>
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		<p>Liz D. Mukami</p>
+		<p>For more info - please click on the link below to get in touch:</p>
+		<div class="social">
+			<a href="https://m.facebook.com/lizdmukami?eav=AfZDHePDpuwA6jEyKqmpOmtj47xih27VdfLrUz1ymQTra6tkWcnb1STwfk4NzFej27M&paipv=0"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.linkedin.com/in/liz-d-mukami-b8305017b"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/lizdmukami"><i class="fab fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=254791735203"><i class='fab fa-whatsapp-square'></i></a>
+		</div>
+		<p class="end">CopyRight By Liz D. Mukami</p>
+	</footer>
 
     <script src="script.js"></script>
 </body>
