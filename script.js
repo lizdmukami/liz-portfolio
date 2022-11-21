@@ -12,3 +12,4 @@ function opentab(event, tabname) {
     document.getElementById(tabname).style.display = "block";
     event.currentTarget.className += " active";
   }
+
