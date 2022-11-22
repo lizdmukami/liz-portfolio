@@ -333,7 +333,9 @@ h5{
 	color: white;
 	font-size: 30px;
 	font-weight: bold;
+	line-height: 1.6;
 	margin-bottom: 25px;
+	text-align: center;
 }
 .contact-me .button-two{
 	background-color:#f9004d;
