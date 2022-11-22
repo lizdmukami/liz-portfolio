@@ -384,6 +384,7 @@ footer p:nth-child(2){
 .social a{
 	width: 45px;
 	height: 45px;
+	padding: 5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
