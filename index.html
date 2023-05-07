@@ -3,159 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
-    <title>LIZ DAMARIS MUKAMI - Personal Portfolio Website</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b816919e66.js" crossorigin="anonymous"></script>
+    <title>Liz Damaris Mukami Wambeti</title>
 </head>
-<body id="body">
-    <div id="header">
-        <div class ="container">
+<body>
+    <!-- -------------------------Header Section Start------------------------- -->
+    <header id="header">
+        <div class="container">
+
             <nav>
-                <img src="./images/logo.png" class="logo"/>
-                <div class="topnav">
-                <a href="#home" class="active">&#128151;</a>
-                <div id="myLinks">
-                    <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-                </div>
+
+                <img src="images/logo.png" alt="Logo" class="logo" />
+
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+
+                <i class="fas fa-bars"></i>
 
             </nav>
-            <div class="content">
-                <h4>Howdy folks! My name is</h4>
+
+            <div class="header-txt">
+                <h4>Howdy folks! I'm</h4>
                 <h1>Liz D. <span>Mukami</span></h1>
                 <h3>From Nairobi, Kenya.</h3>
-                <h3>I'm a Web Developer.</h3>
+                <h3>A Web Developer.</h3>
             </div>
-        </div>
-    </div>
+            </div>
 
-    <!-------------------about------------------>
-    <div id="about">
+        </div>
+    </header>
+    <!-- -------------------------Header Section End------------------------- -->
+
+
+    <!-- -------------------------About Section Start------------------------- -->
+    <section id="about" class="section-padding">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Web developer with a focus on discovering solutions, skilled at contributing to highly collaborative work environments. demonstrated expertise with HTML, CSS, PHP, and JavaScript to create websites with a strong focus on the user. good understanding of user experience and web design best practices.</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            <div class="wrapper">
+
+                <div class="about-img">
+                    <img src="images/user1.jpg" alt="user" class="user-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">about me</h2>
+                    <p>Web developer with a focus on discovering solutions, skilled at contributing to highly collaborative work environments. demonstrated expertise with HTML, CSS, ReactJs, Ruby, and Ruby on Rails to create websites with a strong focus on the user. good understanding of user experience and web design best practices.</p>
+                    <div class="about-tab-titles">
+                        <p class="tab-links active" data-showlink=".skills">skills</p>
+                        <p class="tab-links" data-showlink=".experience">experience</p>
+                        <p class="tab-links" data-showlink=".education">education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active skills">
                         <ul>
-                            <li><p><span>Web Design</span><br>Designing Web/App interfaces</p></li>
-                            <li><p><span>Web Development</span><br>Web App Development</p></li>
-                            <li><p><span>Database Design</span><br>Database Design and Implementation</p></li>
+                            <li><p><span>UI/UX</span><br/>Designing Web/App Interfaces.</p></li>
+                            <li><p><span>Web Development</span><br/>Web App Development.</p></li>
+                            <li><p><span>Database Design</span><br/>Database Implementation.</p></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents experience">
                         <ul>
-                            <li><p><span>2022 Nov - Current</span><br>Software Engineering BootCamp at Moringa School</p></li>
-                            <li><p><span>2022 Jan - Sept</span><br>Systems Developer at VLAN Technologies</p></li>
-                            <li><p><span>2022 June - October</span><br>Part-Time Programming Languages Tutor</p></li>
+                            <li><p><span>2019 - Current</span><br/>Freelance Web Developer at The LDM Center.</p></li>
+                            <li><p><span>2022 Nov - 2023 May</span><br/>Software Developer Through Apprenticeship at Moringa School.</p></li>
+                            <li><p><span>2022 Jun - Sept</span><br/>Part-Time Programming Languages Tutor.</p></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents education">
                         <ul>
-                            <li><p><span>2022-2023</span><br>Software Engineering at Moringa School</p></li>
-                            <li><p><span>2021</span><br><p>HTML, CSS and JavaScript Training through sololearn</p></li>
-                            <li><p><span>2015-2019</span><br><p>BSc Information Science at Rongo University</p></li>
+                            <li><p><span>2022-2023</span><br>Software Engineering at Moringa School.</p></li>
+                            <li><p><span>2021</span><br><p>HTML, CSS and JavaScript Training through sololearn.</p></li>
+                            <li><p><span>2015-2019</span><br><p>BSc Information Science at Rongo University.</p></li>
                         </ul>
                     </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- -------------------------About Section End------------------------- -->
+
+    <!-- -------------------------Services Section Start------------------------- -->
+    <section id="services" class="section-padding">
+        <div class="container">
+
+            <h2 class="service-title section-title">My Services</h2>
+
+            <div class="service-list">
+                <div>
+                    <i class="fa fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a software engineer, I specialize in creating visually appealing and user-friendly websites using the latest web technologies such as JavaScript, HTML, and CSS. I focus on designing intuitive interfaces and optimizing the user experience.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>With my expertise in UI/UX design, I can help you create stunning and engaging interfaces for your digital products. I combine my knowledge of user psychology and design principles to craft interfaces that are both aesthetically pleasing and intuitive to use.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fab fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Do you need a mobile app for your business or startup? I can design and develop cross-platform applications using ReactJS and React Native. By leveraging my skills in app development, I can create feature-rich and responsive mobile applications tailored to your specific needs.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
+            
+
         </div>
-    </div>
+    </section>
+    <!-- -------------------------Services Section End------------------------- -->
 
-    <!-----service section start----------->
-	<div id="services" class="service">
-		<div class="title">
-			<h2>The LDM Services</h2>
-		</div>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Web Design</h5>
-				<div class="pra">
-					<p>Adobe Creative Suite (e.g., Photoshop, Illustrator) or other design software, Graphic design, UI design,UX design, Logo design.</p>
-					<p style="text-align: center;">
-						<a class="button" href="https://dev.to/lizdmukami/web-design-11fd" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
+    <!-- -------------------------Portfolio Section Start------------------------- -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
 
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+            <h2 class="portfolio-title section-title">my work</h2>
 
-					<p style="text-align: center;">
-						<a class="button" href="https://dev.to/lizdmukami/web-development-6i" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
+            <div class="work-list">
 
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>DB Design</h5>
-				<div class="pra">
-					<p>We take charge of designing, developing, executing and preserving a company's data management systems.</p>
+                <div class="work">
+                    <img src="images/movers.PNG" alt="work-1" />
+                    <div class="portfolio-layer">
+                        <h3>movers app</h3>
+                        <p>Are you in need of a groundbreaking solution to revolutionize the way people move? Look no further! I have personally taken part in design and development of the Movers App, an all-in-one platform that simplifies the moving process from start to finish.We meticulously crafted an elegant and user-friendly interface that seamlessly connects individuals with the best moving companies, providing exceptional service at affordable rates. The app offers a curated selection of trusted movers, complete with transparent pricing.</p>
+                        <!-- <div> -->
+                            <a href="https://moversapp.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                        <!-- </div>    -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecommerce.PNG" alt="work-2" />
+                    <div class="portfolio-layer">
+                        <h3>e-commerce app</h3>
+                        <p>I have developed an eCommerce website tailored specifically for displaying products. This site features a user-friendly interface that allows customers to browse through your product catalog effortlessly. With seamless integration of product images, descriptions, and pricing, your customers can explore and learn about your offerings in a visually appealing and organized manner. The website ensures a smooth shopping experience by focusing solely on presenting your products effectively, enhancing their visibility, and capturing potential customers' attention.</p>
+                        <a href="https://mukami-school-work.github.io/E-commerce-product-page/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfoliohero.PNG" alt="work-3" />
+                    <div class="portfolio-layer">
+                        <h3>portfolio page</h3>
+                        <p>As part of my software engineering journey, I have created a personalized portfolio page to showcase my skills, projects, and accomplishments. This page serves as a central hub for potential clients and employers to learn more about me and my expertise in technologies such as JavaScript, ReactJS, Ruby, Ruby on Rails, HTML, and CSS. It features a clean and modern design that highlights my work and provides easy navigation for visitors.</p>
+                        <a href="https://lizdmukami.github.io/liz-portfolio/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
-					<p style="text-align: center;">
-						<a class="button" href="https://dev.to/lizdmukami/web-development-6i" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                <!-- <div class="work">
+                    <img src="images/ecommerce.PNG" alt="work-1" />
+                    <div class="portfolio-layer">
+                        <h3>social media app</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2" />
+                    <div class="portfolio-layer">
+                        <h3>music app</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3" />
+                    <div class="portfolio-layer">
+                        <h3>online shopping app</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2" />
+                    <div class="portfolio-layer">
+                        <h3>music app</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3" />
+                    <div class="portfolio-layer">
+                        <h3>online shopping app</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> -->
 
-	<!------Contact Me------>
-	<div id="contact" class="contact-me">
-		<p>To Get A Dope Full Responsive Website.</p>
-		<div class="newslatter">
-            <form>
-                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                <input class="submit" type="submit" name="submit" value="Lets Start">
-            </form>
+            </div>
+
+            <!-- <a href="#" class="portfolio-btn">Learn more</a> -->
+
         </div>
-        <p>Check Out My Resume</p>
-        <a href="https://drive.google.com/file/d/1A-RFBfJs6f_QKfHncR5afwo8MD0G49x_/view?usp=share_link" target="_blank">
-        <button class="btn"><i class="fa fa-download"></i> Download</button>
-        </a>
-	</div>
+    </section>
+    <!-- -------------------------Portfolio Section End------------------------- -->
 
-	<!------footer start--------->
-	<footer>
-		<p>Get in Touch</p>
-		<p>For more info - please click on the link below to get in touch:</p>
-		<div class="social">
-			<a href="https://m.facebook.com/lizdmukami?eav=AfZDHePDpuwA6jEyKqmpOmtj47xih27VdfLrUz1ymQTra6tkWcnb1STwfk4NzFej27M&paipv=0" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://www.linkedin.com/in/liz-d-mukami-b8305017b" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/lizdmukami" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=254791735203" target="_blank"><i class='fab fa-whatsapp-square'></i></a>
-		</div>
-		<p class="end">CopyRight By Liz D. Mukami</p>
-	</footer>
+    <!-- -------------------------Contact Section Start------------------------- -->
+    <section id="contact" class="section-padding">
+        <div class="container">
 
-    <script src="script.js"></script>
+            <div class="contact-wrapper">
+                <div class="contact-l">
+                    <h2 class="section-title">contact me</h2>
+                    <p><i class="fas fa-paper-plane"></i> lizdmukami@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +254 791 735203</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/lizdmukami" target="_blank"><i class="fab fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/liz-d-mukami-b8305017b" target="_blank"><i class="fab fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/theldmcenter?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=254791735203" target="_blank"><i class="fab fa-brands fa-whatsapp-square"></i></a>
+                    </div>
+                    <a href="LizWambeti.pdf" target="_blank" class="contact-cv" download>Download CV</a>
+                </div>
+
+                <div class="contact-r">
+                    <form action="https://formspree.io/f/xyyaoojy" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="your Email" required />
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- -------------------------Contact Section End------------------------- -->
+
+        <!-- -------------------------Footer Start------------------------- -->
+        <footer>
+            <div class="container">
+                <p>Copyright &copy; <span>LDM</span>Center. made with <i class="fas fa-solid fa-heart"></i> by Liz D. Mukami</p>
+            </div>
+        </footer>
+        <!-- -------------------------Footer End------------------------- -->
+
+
+        <!-- -------------------------Scrolling To Top Button Start------------------------- -->
+        <button id="scroll"><i class="fas fa-arrow-up"></i></button>
+        <!-- -------------------------Scrolling To Top Button End------------------------- -->
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
