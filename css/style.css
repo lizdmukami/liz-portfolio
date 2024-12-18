@@ -11,7 +11,7 @@
     --main-color:#FFDE59;
     --body-color: #080808;
     --white-color:#fff;
-    --txt-color: #ababab;
+    --txt-color: #fff;
 }
 
 *, *::before, *::after {
@@ -121,7 +121,8 @@ ul li {
 #header .header-txt h3{
 	color: white;
 	font-size: 25px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+    line-height: 1.5em;
 }
 #header .header-txt h4{
 	color: #fcfc;
@@ -146,6 +147,7 @@ ul li {
 
 #about .about-img {
     width: 35%;
+    margin-bottom: 30px;
 }
 
 #about .about-img .user-img {
@@ -153,6 +155,7 @@ ul li {
     width: 100%;
     border-radius: 15px;
     height: 70vh;
+    object-fit: cover;
 }
 
 #about .about-content {
@@ -243,6 +246,10 @@ ul li {
     margin-bottom: 25px;
 }
 
+#services .service-list div:hover i {
+    color: var(--body-color);
+}
+
 #services .service-list div h2 {
     font-size: 30px;
     font-weight: 500;
@@ -262,6 +269,7 @@ ul li {
 
 #services .service-list div:hover {
     background-color: var(--main-color);
+    color: var(--body-color);
     transform: translateY(-10px);
 }
 /* -------------------------Services Section End------------------------- */
@@ -371,6 +379,9 @@ ul li {
 
 #contact .contact-wrapper .contact-l p {
     margin: 30px 0;
+}
+
+#contact .contact-wrapper .contact-l p a {
     color: var(--txt-color);
 }
 
@@ -588,6 +599,17 @@ nav .fas {
     }
     button#scroll {
         border: 1px solid #000;
+    }
+}
+@media (min-width: 1200px) { /* Adjust breakpoint as needed */
+    #portfolio .work-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    #about .about-img .user-img {
+        height: auto;
+        max-height: 350px;
     }
 }
 /* Small Screens End */
